@@ -1,0 +1,260 @@
+code,
+pre {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+/* .gatsby-highlight-code-line {
+  background-color: #393d47;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+} */
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+/* .gatsby-highlight {
+  background-color: #2d3036;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+} */
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+/* .gatsby-highlight pre[class*="gatsby-code-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left;
+  min-width: 100%;
+} */
+
+.gatsby-highlight {
+  background: #282c34;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: auto;
+  tab-size: 1.5em;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gatsby-highlight > code[class*='gatsby-code-'],
+.gatsby-highlight > pre[class*='gatsby-code-'],
+.gatsby-highlight > pre.prism-code {
+  height: auto !important;
+  margin: 1rem;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.gatsby-highlight + .gatsby-highlight {
+  margin-top: 20px;
+}
+
+.gatsby-highlight-code-line {
+  background-color: #353b45;
+  display: block;
+  margin: -0.125rem calc(-1rem - 15px);
+  padding: 0.125rem calc(1rem + 15px);
+}
+
+.token.attr-name {
+  color: #c5a5c5;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #b2b2b2;
+}
+
+.token.property,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #5a9bcf;
+}
+
+.token.boolean {
+  color: #ff8b50;
+}
+
+.token.tag {
+  color: #fc929e;
+}
+
+.token.string {
+  color: #8dc891;
+}
+
+.token.punctuation {
+  color: #88c6be;
+}
+
+.token.selector,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #d8dee9;
+}
+
+.token.function {
+  color: #79b6f2;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: #d7deea;
+}
+
+.token.attr-value {
+  color: #8dc891;
+}
+
+.token.keyword {
+  color: #c5a5c5;
+}
+
+.token.atrule,
+.token.class-name {
+  color: #fac863;
+}
+
+.token.important {
+  font-weight: 400;
+}
+
+.token.bold {
+  font-weight: 700;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.namespace {
+  opacity: 0.7;
+}
+
+.gatsby-highlight pre[class*='gatsby-code-']::before {
+  background: #ddd;
+  border-radius: 0 0 4px 4px;
+  color: hsla(270, 17.119554496%, 0%, 0.92);
+  font-size: 0.75rem;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
+    Courier New, monospace;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  right: 1.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.gatsby-highlight pre[class='gatsby-code-javascript']::before {
+  content: 'js';
+  background: #f7df1e;
+}
+
+.gatsby-highlight pre[class='gatsby-code-js']::before {
+  content: 'js';
+  background: #f7df1e;
+}
+
+.gatsby-highlight pre[class='gatsby-code-jsx']::before {
+  content: 'jsx';
+  background: #61dafb;
+}
+
+.gatsby-highlight pre[class='gatsby-code-graphql']::before {
+  content: 'GraphQL';
+  background: #e10098;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.gatsby-highlight pre[class='gatsby-code-html']::before {
+  content: 'html';
+  background: #005a9c;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.gatsby-highlight pre[class='gatsby-code-css']::before {
+  content: 'css';
+  background: #ff9800;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.gatsby-highlight pre[class='gatsby-code-shell']::before {
+  content: 'shell';
+}
+
+.gatsby-highlight pre[class='gatsby-code-sh']::before {
+  content: 'sh';
+}
+
+.gatsby-highlight pre[class='gatsby-code-bash']::before {
+  content: 'bash';
+}
+
+.gatsby-highlight pre[class='gatsby-code-yaml']::before {
+  content: 'yaml';
+  background: #ffa8df;
+}
+
+.gatsby-highlight pre[class='gatsby-code-markdown']::before {
+  content: 'md';
+}
+
+.gatsby-highlight pre[class='gatsby-code-json']::before,
+.gatsby-highlight pre[class='gatsby-code-json5']::before {
+  content: 'json';
+  background: linen;
+}
+
+.gatsby-highlight pre[class='gatsby-code-diff']::before {
+  content: 'diff';
+  background: #e6ffed;
+}
+
+.gatsby-highlight pre[class='gatsby-code-text']::before {
+  content: 'text';
+  background: #ffffff;
+}
+
+.gatsby-highlight pre[class='gatsby-code-flow']::before {
+  content: 'flow';
+  background: #e8bd36;
+}

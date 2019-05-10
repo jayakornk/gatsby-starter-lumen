@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
+  url: 'https://goofy-gates-8ff55e.netlify.com',
+  title: 'Blog by Jayakorn Karikan',
   subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
@@ -23,14 +23,14 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Jayakorn Karikan',
     photo: '/photo.jpg',
     bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
     contacts: {
-      email: '#',
+      email: 'jayakornk@gmail.com',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'https://github.com/jayakornk',
       rss: '#',
       vkontakte: '#'
     }

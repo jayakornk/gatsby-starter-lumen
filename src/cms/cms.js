@@ -3,7 +3,7 @@ import PagePreview from './preview-templates/page-preview';
 import PostPreview from './preview-templates/post-preview';
 
 import './assets/fonts/Jost/jost.css';
-import './assets/scss/init.scss';
+import './assets/css/styles.css';
 
 CMS.registerPreviewTemplate('pages', PagePreview);
 CMS.registerPreviewTemplate('posts', PostPreview);

@@ -89,7 +89,12 @@ module.exports = {
       }
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        useMozJpeg: true,
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

@@ -94,6 +94,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          '@raae/gatsby-remark-oembed',
           {
             resolve: 'gatsby-remark-katex',
             options: {

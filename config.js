@@ -30,7 +30,7 @@ module.exports = {
       email: 'jayakornk@gmail.com',
       github: 'jayakornk',
       twitter: '#',
-      rss: '#',
+      rss: '/rss.xml',
     }
   }
 };

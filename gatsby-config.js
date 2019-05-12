@@ -100,7 +100,10 @@ module.exports = {
           },
           {
             resolve: 'gatsby-remark-images',
-            options: { maxWidth: 960 }
+            options: {
+              maxWidth: 960,
+              tracedSVG: true,
+            }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
@@ -127,15 +130,15 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       }
     },
-    {
-      resolve: 'gatsby-plugin-google-gtag',
-      options: {
-        trackingIds: [siteConfig.googleAnalyticsId],
-        pluginConfig: {
-          head: true,
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-gtag',
+    //   options: {
+    //     trackingIds: [siteConfig.googleAnalyticsId],
+    //     pluginConfig: {
+    //       head: true,
+    //     },
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {

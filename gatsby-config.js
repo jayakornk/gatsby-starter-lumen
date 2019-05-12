@@ -88,6 +88,8 @@ module.exports = {
         }]
       }
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -102,7 +104,13 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
-              tracedSVG: true,
+              withWebp: true,
+              tracedSVG: {
+                color: 'lightgray',
+                optTolerance: 0.4,
+                turdSize: 100,
+                turnPolicy: 'TURNPOLICY_MAJORITY',
+              },
             }
           },
           {
@@ -121,8 +129,6 @@ module.exports = {
         ]
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-netlify-cms',

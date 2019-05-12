@@ -3,6 +3,7 @@ import PagePreview from './preview-templates/page-preview';
 import PostPreview from './preview-templates/post-preview';
 
 import './assets/fonts/Jost/jost.css';
+import './assets/fonts/Besley/besley.css';
 import './assets/css/styles.css';
 
 CMS.registerPreviewTemplate('pages', PagePreview);

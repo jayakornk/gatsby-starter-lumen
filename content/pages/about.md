@@ -2,7 +2,7 @@
 template: page
 title: About me
 slug: about
-draft: true
+draft: false
 ---
 ## Hi, I'm Jayakorn Karikan (Bacon)
 

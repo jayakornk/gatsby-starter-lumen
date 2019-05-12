@@ -17,9 +17,7 @@
   }
 
   &__body {
-    font-size: $typographic-base-font-size;
-    @include line-height(1);
-    @include margin(0, 0, 1);
+    font-family: $typographic-font-family-content;
   }
 
 }
@@ -32,6 +30,12 @@
       padding: 30px 20px;
     }
 
+    &__body {
+      font-size: $typographic-base-font-size;
+      @include line-height(1);
+      @include margin(0, 0, 1);
+    }
+
   }
 
 }
@@ -42,6 +46,12 @@
 
     &__inner {
       padding: 40px 35px;
+    }
+
+    &__body {
+      font-size: $typographic-base-font-size * 1.125;
+      @include line-height(1.125);
+      @include margin(0, 0, 1.125);
     }
 
   }

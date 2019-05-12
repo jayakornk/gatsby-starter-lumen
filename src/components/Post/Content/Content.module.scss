@@ -19,6 +19,7 @@
   }
 
   &__body {
+    font-family: $typographic-font-family-content;
     & figure {
       @include margin-bottom(1);
 

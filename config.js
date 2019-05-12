@@ -3,11 +3,11 @@
 module.exports = {
   url: 'https://blog.jayakornk.dev',
   title: 'Blog by Jayakorn Karikan',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  subtitle: 'Personal blog for knowledge sharing and some other interesting stuff',
   copyright: '© 2019 All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  // googleAnalyticsId: 'UA-73379983-2',
   menu: [
     {
       label: 'Articles',
@@ -25,7 +25,7 @@ module.exports = {
   author: {
     name: 'Jayakorn Karikan',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Web Developer for Pronto Marketing and freelancer looking for interesting project',
     contacts: {
       email: 'jayakornk@gmail.com',
       github: 'jayakornk',
